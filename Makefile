@@ -1,5 +1,5 @@
 #PROGRAM NAME
-PROG1 = sound_making.py
+PROG1 = main.py
 SPEC = .spec
 DIR = $(shell pwd)
 FILES = build *.spec
