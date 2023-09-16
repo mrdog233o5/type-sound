@@ -6,7 +6,7 @@ import os
 
 localaddr = os.path.expanduser('~')+"/.config/type-sound"
 configFile = open(f"{localaddr}/type-sound.json", "r").read()
-soundPack = "test-pack"
+soundPack = eval(configFile)["pack"]
 print(configFile)
 press   = sa.WaveObject.from_wave_file(f"{localaddr}/sounds/{soundPack}/press.wav")
 release = sa.WaveObject.from_wave_file(f"{localaddr}/sounds/{soundPack}/release.wav")
