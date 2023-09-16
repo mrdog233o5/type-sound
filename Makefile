@@ -16,11 +16,6 @@ cleanspec:
 
 build:
 	$(CC) $(CFLAGS) $(PROG1)
-	@mkdir dist/sound_making.app/Contents/Resources/sounds
-	@mkdir dist/sounds
-	@cp -r sounds/ dist/sound_making.app/Contents/Resources/sounds
-	@cp -r sounds/ dist/sounds
-	
 
 run: build*
 	@open ./dist/*

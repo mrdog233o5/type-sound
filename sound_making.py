@@ -1,9 +1,15 @@
-from pynput import keyboard
 import simpleaudio as sa
+import pathlib
+from pynput import keyboard
+from os import system as osys
+import os
 
-press   = sa.WaveObject.from_wave_file("./sounds/0/press.wav")
-release = sa.WaveObject.from_wave_file("./sounds/0/release.wav")
-
+localaddr = os.path.expanduser('~')+"/.config/type-sound"
+configFile = open(f"{localaddr}/type-sound.json", "r").read()
+soundPack = "test-pack"
+print(configFile)
+press   = sa.WaveObject.from_wave_file(f"{localaddr}/sounds/{soundPack}/press.wav")
+release = sa.WaveObject.from_wave_file(f"{localaddr}/sounds/{soundPack}/release.wav")
 sounds = {}
 
 def on_press(key):
