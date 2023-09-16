@@ -33,6 +33,7 @@ except:
     exit()
 
 sounds = {}
+is_mouse_pressed = False
 
 print(f"""
 pack selected: {soundPack}

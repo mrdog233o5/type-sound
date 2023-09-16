@@ -25,7 +25,6 @@ this is a hidden folder as it starts with a dot, so you have to press `command+s
 ```
 {
     "pack":<soundpack that you are using>,
-    "volume":<volume of the sound, an integer from 0 to 100>
 }
 ```
 remember to save and reopen type-sound when you made any changes
