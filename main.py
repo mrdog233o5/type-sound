@@ -5,6 +5,7 @@ from pynput import keyboard,mouse
 from os import system as osys
 
 osys("clear")
+contri = ' '.join(str(e) for e in open("CONTRIBUTIONS", 'r').readlines(0)).replace('\n', ',')
 print(f"""
 ████████╗██╗░░░██╗██████╗░███████╗░░░░░░░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
 ╚══██╔══╝╚██╗░██╔╝██╔══██╗██╔════╝░░░░░░██╔════╝██╔══██╗██║░░░██║████╗░██║██╔══██╗
@@ -13,7 +14,7 @@ print(f"""
 ░░░██║░░░░░░██║░░░██║░░░░░███████╗░░░░░░██████╔╝╚█████╔╝╚██████╔╝██║░╚███║██████╔╝
 ░░░╚═╝░░░░░░╚═╝░░░╚═╝░░░░░╚══════╝░░░░░░╚═════╝░░╚════╝░░╚═════╝░╚═╝░░╚══╝╚═════╝░
 
-made by William Chen""")
+made by {contri}""")
 
 try:
     localaddr = os.path.expanduser('~')+"/.config/type-sound"
@@ -51,14 +52,14 @@ def on_release(key):
 
 def on_click(x, y, button, pressed):
     global is_mouse_pressed
-    if button == mouse.Button.left:
-        if pressed:
-            is_mouse_pressed = True
-            mousePress.play()
-        else:
-            if is_mouse_pressed:
-                is_mouse_pressed = False
-                mouseRelease.play()
+    # if button == mouse.Button.left: # why?
+    if pressed:
+        is_mouse_pressed = True
+        mousePress.play()
+    else:
+        if is_mouse_pressed:
+            is_mouse_pressed = False
+            mouseRelease.play()
 
 # Collect events until released
 with keyboard.Listener(
