@@ -6,7 +6,7 @@ FILES = build *.spec
 
 #COMPILER variable
 CC = pyinstaller
-CFLAGS = --clean --noconfirm --noconsole --uac-admin --hidden-import simpleaudio --name type-sound -F
+CFLAGS = --clean --noconfirm --noconsole --uac-admin --hidden-import=simpleaudio --name type-sound -F
 
 #rules and recipes
 all: clean build cleanspec
