@@ -54,11 +54,11 @@ def on_click(x, y, button, pressed):
     if button == mouse.Button.left:
         if pressed:
             is_mouse_pressed = True
-            press.play()
+            mousePress.play()
         else:
             if is_mouse_pressed:
                 is_mouse_pressed = False
-                release.play()
+                mouseRelease.play()
 
 # Collect events until released
 with keyboard.Listener(
