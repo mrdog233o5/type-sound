@@ -52,8 +52,6 @@ def on_release(key):
 
 def on_click(x, y, button, pressed):
     global is_mouse_pressed
-<<<<<<< HEAD
-    # if button == mouse.Button.left: # why?
     if pressed:
         is_mouse_pressed = True
         mousePress.play()
@@ -61,16 +59,6 @@ def on_click(x, y, button, pressed):
         if is_mouse_pressed:
             is_mouse_pressed = False
             mouseRelease.play()
-=======
-    if button == mouse.Button.left:
-        if pressed:
-            is_mouse_pressed = True
-            press.play()
-        else:
-            if is_mouse_pressed:
-                is_mouse_pressed = False
-                release.play()
->>>>>>> parent of 3172c05 (fixed mouse sound)
 
 # Collect events until released
 with keyboard.Listener(
