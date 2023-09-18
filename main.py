@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 #!/usr/bin/env python3
-=======
->>>>>>> parent of f15ae8d (idk)
 import simpleaudio as sa
 import pathlib
 import os
