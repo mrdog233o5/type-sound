@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/opt/homebrew/bin/python3
 import simpleaudio as sa
 import pathlib
 import os
@@ -6,7 +6,6 @@ from pynput import keyboard,mouse
 from os import system as osys
 
 osys("clear")
-contri = ' '.join(str(e) for e in open("CONTRIBUTIONS", 'r').readlines(0)).replace('\n', ',')
 print(f"""
 ████████╗██╗░░░██╗██████╗░███████╗░░░░░░░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
 ╚══██╔══╝╚██╗░██╔╝██╔══██╗██╔════╝░░░░░░██╔════╝██╔══██╗██║░░░██║████╗░██║██╔══██╗
