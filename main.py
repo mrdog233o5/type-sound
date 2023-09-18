@@ -21,18 +21,19 @@ try:
     localaddr = os.path.expanduser('~')+"/.config/type-sound"
     configFile = open(f"{localaddr}/type-sound.json", "r").read()
     soundPack = eval(configFile)["pack"]
-except:
-    print(">>> ERROR - config file error, read the manual (https://github.com/mrdog233o5/type-sound)")
-    exit()
+    if soundPack.endswitch('.pack')
+except Expection as e:
+    raise e(">>> ERROR - config file error, read the manual (https://github.com/mrdog233o5/type-sound)")
+    exit(1)
 
 try:
     press = sa.WaveObject.from_wave_file(f"{localaddr}/sounds/{soundPack}/press.wav")
     release = sa.WaveObject.from_wave_file(f"{localaddr}/sounds/{soundPack}/release.wav")
     mousePress = sa.WaveObject.from_wave_file(f"{localaddr}/sounds/{soundPack}/mousePress.wav")
     mouseRelease = sa.WaveObject.from_wave_file(f"{localaddr}/sounds/{soundPack}/mouseRelease.wav")
-except:
-    print(">>> ERROR - sound pack issue, read the manual (https://github.com/mrdog233o5/type-sound)")
-    exit()
+except Expection as e:
+    raise e(">>> ERROR - sound pack issue, read the manual (https://github.com/mrdog233o5/type-sound)")
+    exit(1)
 
 sounds = {}
 is_mouse_pressed = False
