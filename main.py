@@ -1,3 +1,4 @@
+#!/bin/python3
 import simpleaudio as sa
 import pathlib
 import os
