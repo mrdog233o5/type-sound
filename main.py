@@ -5,6 +5,7 @@ import os
 from pynput import keyboard,mouse
 from os import system as osys
 
+contri = "mrdog233o5 and littleblack111"
 osys("clear")
 print(f"""
 ████████╗██╗░░░██╗██████╗░███████╗░░░░░░░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
