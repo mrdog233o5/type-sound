@@ -28,3 +28,6 @@ this is a hidden folder as it starts with a dot, so you have to press `command+s
 }
 ```
 remember to save and reopen type-sound when you made any changes
+# execute
+
+run `type-sound/dist/main` (NOT main.app, NOT THE APPLICATION, ITS THE EXECUTABLE) and wait for a few second, then if you see a big text saying "type-sound", then you can use it!
