@@ -25,7 +25,7 @@ except:
     print(">>> ERROR - config file error, read the manual (https://github.com/mrdog233o5/type-sound)")
     exit()
 
-try:
+try
     press = sa.WaveObject.from_wave_file(f"{localaddr}/sounds/{soundPack}/press.wav")
     release = sa.WaveObject.from_wave_file(f"{localaddr}/sounds/{soundPack}/release.wav")
     mousePress = sa.WaveObject.from_wave_file(f"{localaddr}/sounds/{soundPack}/mousePress.wav")
