@@ -21,7 +21,7 @@ try:
     localaddr = os.path.expanduser('~')+"/.config/type-sound"
     configFile = open(f"{localaddr}/type-sound.json", "r").read()
     soundPack = eval(configFile)["pack"]
-    if soundPack.endswitch('.pack')?
+    if soundPack.endswitch('.pack'):
 except Expection as e:
     raise e(">>> ERROR - config file error, read the manual (https://github.com/mrdog233o5/type-sound)")
     exit(1)
