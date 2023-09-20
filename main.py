@@ -21,7 +21,7 @@ try:
     localaddr = os.path.expanduser('~')+"/.config/type-sound"
     configFile = open(f"{localaddr}/type-sound.json", "r").read()
     soundPack = eval(configFile)["pack"]
-except Exception as e:
+except:
     print(">>> ERROR - config file error, read the manual (https://github.com/mrdog233o5/type-sound)")
     exit(1)
 
@@ -30,7 +30,7 @@ try:
     release = sa.WaveObject.from_wave_file(f"{localaddr}/sounds/{soundPack}/release.wav")
     mousePress = sa.WaveObject.from_wave_file(f"{localaddr}/sounds/{soundPack}/mousePress.wav")
     mouseRelease = sa.WaveObject.from_wave_file(f"{localaddr}/sounds/{soundPack}/mouseRelease.wav")
-except Exception as e:
+except:
     print(">>> ERROR - sound pack issue, read the manual (https://github.com/mrdog233o5/type-sound)")
     exit(1)
 
