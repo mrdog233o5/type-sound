@@ -1,6 +1,6 @@
 # installization
 
- 1. download type-sound files, which is all in this folder: https://github.com/mrdog233o5/type-sound/archive/refs/heads/master.zip
+ 1. download type-sound files, which is all in this folder: https://github.com/mrdog233o5/type-sound/archive/refs/heads/main.zip
  2. unzip the zip file and put the folder in where you want to install type-sound
  3. open terminal (a macos application), all the steps after will be done in this app using command line
  4. go to the directory of typing-sound folder using `cd <path of the folder>`
