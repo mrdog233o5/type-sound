@@ -5,7 +5,10 @@
  3. open terminal (a macos application), all the steps after will be done in this app using command line
  4. go to the directory of typing-sound folder using `cd <path of the folder>`
  5. setup all the files of type-sound, you can use the script i made to automatically setup: `bash setup.sh`
- 6. now all of the basic files are installed, to be able to use type-sound, you MUST read #config page to be able to use type-sound (this step doesnt have to be done with terminal)
+ 6.install homebrew from https://brew.sh/
+ 7.install python by `brew install python3`
+ 8.then install all the packages by doing `pip3 install -r ./requirements.txt`
+ 9. now all of the basic files are installed, to be able to use type-sound, you MUST read #config page to be able to use type-sound (this step doesnt have to be done with terminal)
 # config
 type-sound does not contain any sounds in it, so to use type-sound, you must give type-sound a sound to play. The default setting can also be not suitable for you, so you can customize type-sound by configuring it.
 
