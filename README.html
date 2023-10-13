@@ -1,0 +1,41 @@
+<div class="info">
+    <h1>Description</h1>
+    <p>type-sound can to make sounds when you are typing, and you dont have to waste money on a mechanical Keyboard.</p>
+</div>
+<div class="info">
+    <h1>Installation</h1>
+    <ol>
+        <li>download type-sound files, which is all in this zip file: <a href="https://github.com/mrdog233o5/type-sound/archive/refs/heads/main.zip">zip</a></li>
+        <li>unzip the it by double click it and put the folder in anywhere you want</li>
+        <li>a terminal emulator, all the steps after will be done in this app using command line</li>
+        <li>change directory into the type-sound folder using <span class="codeBlock">cd (path of the folder)</span></li>
+        <li>setup all the files of type-sound, you can use the script i made to automatically setup: <span class="codeBlock">bash ./setup.sh</span></li>
+        <li>install homebrew from <a href="https://brew.sh/">https://brew.sh/</a></li>
+        <li>install python by <span class="codeBlock">brew install python3</span></li>
+        <li>then install all the packages by doing <span class="codeBlock">pip3 install -r ./requirements.txt</span></li>
+        <li>now all of the basic files are installed, to be able to use type-sound, you MUST read #config page to be able to use type-sound (this step doesnt have to be done with terminal)</li>
+    </ol>
+</div>
+<div class="info">
+    <h1>Config</h1>
+    <ol>
+        <li>find any sound you want, ANY, even meme sounds.</li>
+        <li>convert the sound you got to .WAV format using any tools, i suggest https://cloudconvert.com/ because it is free, but you can use any tools you want, as long as the output sound is in .WAV format.</li>
+        <li>rename the sound files EXACTLY like this structure:
+            <pack_name>									#any name you like for the pack
+             ├── press.wav							#sound played when pressed a key
+             ├── release.wav 						#sound played when released a key
+             ├── mousePress.wav 				#sound played when pressed mouse
+             └── mouseRelease.wav				#sound played when released mouse
+        put the whole folder directly into `./.config/type-sound/sounds` aka `/Users/(your user name)/.config/type-sound/sound/sounds`</li>
+        <li>this is a hidden folder as it starts with a dot, so you have to press `command+shift+period(.)` to enable displaying hidden folders.</li>
+        <li>the sound pack is added correctly if you followed the steps above correctly. To tell type-sound to use that sound pack, open `./.config/type-sound/type-sound.json` aka `/Users/(your user name)/.config/type-sound/type-sound.json` with a text editor.</li>
+        <li>when you open it, it should look like something like this:
+        <span class="codeBlock">
+        {
+            "pack":(soundpack that you are using),
+        }
+        </span>
+        remember to save and reopen type-sound when you made any changes</li>
+    </ol>
+</div>
