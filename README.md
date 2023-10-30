@@ -30,4 +30,4 @@ this is a hidden folder as it starts with a dot, so you have to press `command+s
 remember to save and reopen type-sound when you made any changes
 # execute
 
-open `<the location of the type-sound folder>/dist/type-sound.app`
+open `<the location of the type-sound folder>/dist/type-sound.app` if u did all the steps above correctly, you should be able to hear sound when ur typing after a few seconds
