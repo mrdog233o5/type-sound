@@ -18,9 +18,9 @@ type-sound does not contain any sounds in it, so to use type-sound, you must giv
 	 ├── release.wav 						#sound played when released a key
 	 ├── mousePress.wav 				#sound played when pressed mouse
 	 └── mouseRelease.wav				#sound played when released mouse
-4. put the whole folder directly into `./.config/type-sound/sounds` aka `/Users/<your user name>/.config/type-sound/sound/sounds` 
+4. put the whole folder directly into `~/.config/type-sound/sounds` aka `/Users/<your user name>/.config/type-sound/sound/sounds` 
 this is a hidden folder as it starts with a dot, so you have to press `command+shift+period(.)` to enable displaying hidden folders.
-5. the sound pack is added correctly if you followed the steps above correctly. To tell type-sound to use that sound pack, open `./.config/type-sound/type-sound.json` aka `/Users/<your user name>/.config/type-sound/type-sound.json` with a text editor.
+5. the sound pack is added correctly if you followed the steps above correctly. To tell type-sound to use that sound pack, open `~/.config/type-sound/type-sound.json` aka `/Users/<your user name>/.config/type-sound/type-sound.json` with a text editor.
 6. when you open it, it should look like something like this:
 ```
 {
@@ -30,4 +30,4 @@ this is a hidden folder as it starts with a dot, so you have to press `command+s
 remember to save and reopen type-sound when you made any changes
 # execute
 
-run `type-sound/dist/main` (NOT main.app, NOT THE APPLICATION, ITS THE EXECUTABLE) and wait for a few second, then if you see a big text saying "type-sound", then you can use it!
+open `<the location of the type-sound folder>/dist/type-sound.app`
